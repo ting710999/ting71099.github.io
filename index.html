@@ -932,7 +932,7 @@ footer .heart{color:var(--accent);}
           <div class="tags" style="margin-bottom:16px">
             <span>无人机</span><span>水质监测</span><span>水域巡检</span>
           </div>
-          <a href="#" class="work-link">
+          <a href="https://yunyue173.github.io/qinglings/" target="_blank" rel="noopener" class="work-link">
             查看详情
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
                  stroke-linecap="round" stroke-linejoin="round">
@@ -960,7 +960,7 @@ footer .heart{color:var(--accent);}
           <div class="tags" style="margin-bottom:16px">
             <span>分布式</span><span>主动拨测</span><span>大语言模型</span>
           </div>
-          <a href="#" class="work-link">
+          <a href="javascript:void(0)" class="work-link" onclick="document.getElementById('project2Modal').showModal(); return false;">
             查看详情
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
                  stroke-linecap="round" stroke-linejoin="round">
@@ -1434,5 +1434,12 @@ footer .heart{color:var(--accent);}
   document.getElementById('year').textContent = new Date().getFullYear();
 })();
 </script>
+  <!-- 项目2 图片弹窗 -->
+<dialog id="project2Modal" style="border:none; border-radius:16px; padding:0; max-width:90vw; max-height:90vh; background:transparent; overflow:hidden;">
+  <div style="position:relative;">
+    <img src="project2.jpg" alt="项目设计图" style="width:100%; height:auto; max-height:85vh; border-radius:16px; display:block; object-fit:contain;">
+    <button onclick="document.getElementById('project2Modal').close()" style="position:absolute; top:12px; right:12px; background:rgba(0,0,0,.6); color:#fff; border:none; border-radius:50%; width:36px; height:36px; font-size:16px; cursor:pointer; display:flex; align-items:center; justify-content:center;">✕</button>
+  </div>
+</dialog>
 </body>
 </html>
